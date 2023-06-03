@@ -1,0 +1,219 @@
+/* Global styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Maven Pro', sans-serif;font-family: 'Maven Pro', sans-serif;
+
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Nav and category sidebar*/
+
+#sidebar {
+    font-family: 'Open Sans', sans-serif;
+    position: absolute;
+    top: 70px;
+    right: -250px;
+    width: 250px;
+    height: 82%;
+    background-color: #eeeeee;
+    transition: right 0.5s ease-in-out;
+}
+
+#sidebar h3 {
+    margin-top: 0;
+    text-align: center;
+}
+
+#sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#sidebar a {
+    text-decoration: none;
+    color: #333;
+}
+
+#sidebar ul li a:hover {
+    padding: 10px;
+    background: #000001;
+    color: white;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+li {
+    margin: 10px;
+    flex-basis: calc(20.33% - 208px);
+}
+
+#logoNav{
+    margin-top: 10px;
+}
+
+#sidebar-btn {
+    background: black;
+    color: white;
+    float: right;
+    border: 1px solid;
+    cursor: pointer;
+    font-size: 15px;
+    width: 150px;
+    height: 40px;
+}
+
+#logo{
+    max-width: 60px;
+}
+
+/*Main content*/
+.pageTitle{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.content{
+    display: flex;
+    justify-content: space-around;
+}
+
+.imgContainer{
+    min-width: 300px;
+    max-width: 600px;
+    max-height: 550px;
+    object-fit: contain;
+    border-right: 3px solid lightgray;
+}
+
+.imgContainer img{
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.cardAndMap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*card styles*/
+.card{
+    max-width: 700px;
+}
+.card-body{
+    gap: 2rem;
+    justify-content: space-around;
+}
+.cardHeaders{
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+}
+.workingDays{
+    font-size: 0.9rem;
+    font-weight: bold;
+    gap: 1rem;
+}
+
+/*footer*/
+.footerParts{
+    height: 80%;
+    padding: 20px 50px 0 50px;
+}
+#footerBottomText{
+    text-align: right;
+}
+.footerParts div:last-child{
+    align-self: center;
+}
+
+/*map*/
+.map{
+    margin-top: 10px;
+    width: clamp(200px, 900px, 1200px);
+    max-height: 250px;
+}
+footer{
+    margin-top: 20px;
+    height: clamp(150px, 250px, 400px);
+    background: #e8e8e9;
+}
+
+/*icons*/
+.iconList{
+    gap: 1rem;
+}
+.bi{
+    font-size: 2rem;
+}
+/*small Screen*/
+@media screen and (max-width: 480px){
+    .content{
+        flex-direction: column;
+    }
+    .imgContainer{
+        border: none;
+    }
+    .map{
+        width: 100%;
+    }
+    .card{
+        width: 95%;
+        font-size: 12px;
+    }
+    .card-body{
+        gap: 1rem;
+    }
+    .workTime p{
+        font-size: 10px;
+        font-weight: bold;
+    }
+    footer{
+        height: auto;
+    }
+    .footerParts{
+        font-size: 1rem;
+        padding: 0;
+        flex-direction: column;
+    }
+
+    .footerParts h3{
+        font-size: 1.5rem;
+    }
+    #footerBottomText{
+        margin-top: 20px;
+    }
+}
+/*@media screen and (min-width: 1000px){*/
+/*    .content{*/
+/*        display: flex;*/
+/*    }*/
+/*}*/
+@media screen and (min-width: 540px) and (max-width: 900px) {
+    .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .imgContainer{
+        border: none;
+    }
+}

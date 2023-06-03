@@ -1,0 +1,158 @@
+/*Google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&family=Michroma&family=Open+Sans:ital,wght@0,300;0,700;1,400&display=swap');
+
+
+/* Global styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Maven Pro', sans-serif;font-family: 'Maven Pro', sans-serif;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Nav and category sidebar*/
+
+#sidebar {
+    font-family: 'Open Sans', sans-serif;
+    position: absolute;
+    top: 70px;
+    right: -250px;
+    width: 250px;
+    height: 82%;
+    background-color: #eeeeee;
+    transition: right 0.5s ease-in-out;
+}
+
+#sidebar h3 {
+    margin-top: 0;
+    text-align: center;
+}
+
+#sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#sidebar a {
+    text-decoration: none;
+    color: #333;
+}
+
+#sidebar ul li a:hover {
+    padding: 10px;
+    background: #000001;
+    color: white;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+li {
+    margin: 10px;
+    flex-basis: calc(20.33% - 208px);
+}
+
+#logoNav{
+    margin-top: 10px;
+}
+
+#sidebar-btn {
+    background: black;
+    color: white;
+    float: right;
+    border: 1px solid;
+    cursor: pointer;
+    font-size: 15px;
+    width: 150px;
+    height: 40px;
+}
+
+#logo{
+    max-width: 60px;
+}
+
+/* Main content styles */
+.mainContainer{
+    background: #ecedf9;
+    max-width: 100%!important;
+}
+/* Product details */
+.mainContainer *{
+    margin-left: 35px;
+}
+
+#smallImages *{
+    max-width: 100px;
+    max-height: 80px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#bigImage *{
+    width: 30vw;
+    height: 30vw;
+    transition: transform 0.5s ease;
+}
+
+.listItemsD{
+    list-style: circle;
+}
+
+#price {
+    margin: 0;
+}
+
+/* Footer*/
+footer{
+    float: right;
+}
+
+
+/*Screen Sizes*/
+@media screen and (min-width: 790px) and (max-width: 1000px){
+    #smallImages{
+        margin-right: 30px!important;
+    }
+}
+@media screen and (max-width: 480px){
+    #bigImage img{
+        width: 100%;
+        height: 100%;
+    }
+    #smallImages > div:first-child{
+        margin-left: 30px;
+    }
+    #smallImages{
+        display: flex;
+        flex-direction: row!important;
+        overflow-x: scroll;
+        order: 2;
+        width: 100%;
+        margin: 0;
+    }
+    #smallImages *{
+        margin: 0 5px;
+    }
+    #bigImage{
+        height: 20.5rem;
+        order: 1;
+    }
+    #description{
+        order: 3;
+    }
+}
