@@ -1,7 +1,7 @@
 //Fetching data
 let categoryData
 let data
-fetch("http://localhost:5158/lookup/categories/landing/page/list", {
+fetch("http://prendjovp-001-site1.atempurl.com/lookup/categories/landing/page/list", {
     method: 'GET',
     headers: {
         'Content-Type': 'application/json'

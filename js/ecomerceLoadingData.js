@@ -16,7 +16,7 @@ fetchDataFromApi(data2)
 
 //Generating product info
 function fetchDataFromApi(data2){
-    fetch("http://localhost:5158/furniture/datatable", {
+    fetch("http://prendjovp-001-site1.atempurl.com/furniture/datatable", {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

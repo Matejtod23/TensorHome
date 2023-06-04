@@ -2,7 +2,7 @@
 let data2 = "{\"pageNumber\":1,\"pageSize\":15}"
 let fetchedData
 
-fetch("http://localhost:5158/lookup/items/list", {
+fetch("http://prendjovp-001-site1.atempurl.com/lookup/items/list", {
     method: 'POST',
     headers: {
         'Content-Type': 'application/json'
