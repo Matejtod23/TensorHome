@@ -81,7 +81,11 @@ li {
 }
 
 #logo{
-    max-width: 60px;
+    margin-top: 15px;
+    max-width: 100px;
+}
+.navbar-brand{
+    padding-left: 20px;
 }
 
 /*Main content*/
@@ -99,12 +103,14 @@ li {
     min-width: 300px;
     max-width: 600px;
     max-height: 550px;
-    object-fit: contain;
+    padding-right: 10px;
     border-right: 3px solid lightgray;
+    display: flex;
+    align-items: center;
 }
 
 .imgContainer img{
-    object-fit: cover;
+    /*object-fit: cover;*/
     max-width: 100%;
     max-height: 100%;
 }
@@ -183,7 +189,7 @@ footer{
         gap: 1rem;
     }
     .workTime p{
-        font-size: 10px;
+        font-size: 12px;
         font-weight: bold;
     }
     footer{
@@ -202,12 +208,7 @@ footer{
         margin-top: 20px;
     }
 }
-/*@media screen and (min-width: 1000px){*/
-/*    .content{*/
-/*        display: flex;*/
-/*    }*/
-/*}*/
-@media screen and (min-width: 540px) and (max-width: 900px) {
+@media screen and (min-width: 540px) and (max-width: 1200px) {
     .content{
         display: flex;
         flex-direction: column;

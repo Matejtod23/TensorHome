@@ -1,7 +1,7 @@
 //Fetching data
 let categoryData
 let data
-fetch("https://crossorigin.me/http://prendjovp-001-site1.atempurl.com/lookup/categories/landing/page/list", {
+fetch("https://prendjovp-001-site1.atempurl.com/lookup/categories/landing/page/list", {
     method: 'GET',
     headers: {
         'Content-Type': 'application/json'

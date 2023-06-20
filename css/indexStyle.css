@@ -166,7 +166,11 @@ li {
 }
 
 #logo{
-    max-width: 60px;
+    margin-top: 15px;
+    max-width: 100px;
+}
+.navbar-brand{
+    padding-left: 20px;
 }
 
 /*smaller screens*/

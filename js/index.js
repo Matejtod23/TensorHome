@@ -17,3 +17,10 @@ document.addEventListener("DOMContentLoaded", function() {
         navbarNav.classList.toggle("show");
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    var contactB = document.querySelector("#contactButton");
+    contactB.addEventListener("click", function () {
+        window.location.href = "../html/Contact.html"
+    })
+})
