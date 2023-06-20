@@ -88,7 +88,7 @@ function generateProducts(data){
                     productText.appendChild(productPrice)
                     productBox.appendChild(productText)
                     productBox.addEventListener('click', () => {
-                        var link = "../html/ProductPage.html?id=" + products[i].id
+                        var link = "ProductPage.html?id=" + products[i].id
                         localStorage.setItem('product', JSON.stringify(products[i]))
                         window.open(link, "_blank");
                     })

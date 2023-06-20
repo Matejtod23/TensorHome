@@ -21,6 +21,6 @@ document.addEventListener("DOMContentLoaded", function() {
 document.addEventListener("DOMContentLoaded", function () {
     var contactB = document.querySelector("#contactButton");
     contactB.addEventListener("click", function () {
-        window.location.href = "../html/Contact.html"
+        window.location.href = "Contact.html"
     })
 })

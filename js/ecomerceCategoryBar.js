@@ -27,7 +27,7 @@ function generateCategoryBar(data){
         link.id = category.categoryId
         link.innerHTML = category.category
         link.addEventListener('dblclick', () => {
-            var link = "../html/ecomerce.html?id=" + category.categoryId
+            var link = "ecomerce.html?id=" + category.categoryId
             localStorage.setItem('categoryId',category.categoryId);
             window.location.href = link
         })
@@ -51,7 +51,7 @@ function generateCategoryBar(data){
                 subLink.id = sub.subCategoryId
                 subLink.style.cursor = "pointer"
                 subLink.addEventListener('click', () => {
-                    var link = "../html/ecomerce.html?id=" + category.categoryId
+                    var link = "ecomerce.html?id=" + category.categoryId
                     localStorage.setItem('categoryId',sub.subCategoryId + " sub");
                     window.location.href = link
                 })
