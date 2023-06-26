@@ -21,18 +21,24 @@ function generateCategoryBar(data){
     const categories = Array.from(data)
     categories.forEach(function (category) {
         const listItem = document.createElement("li")
+        listItem.classList.add("mainListItem")
         // link
         const link = document.createElement("a")
         link.classList.add("categoryLinks")
         link.id = category.categoryId
         link.innerHTML = category.category
-        link.addEventListener('dblclick', () => {
+        // dropdown_icon
+        const icon = document.createElement("span")
+        icon.classList.add("material-symbols-outlined", "dpIcon")
+        icon.innerText = "expand_more"
+        link.addEventListener('click', () => {
             var link = "ecomerce.html?id=" + category.categoryId
             localStorage.setItem('categoryId',category.categoryId);
             window.location.href = link
         })
         // adding the link to list item
         listItem.appendChild(link)
+        listItem.appendChild(icon)
 
 
         // if subCategories present
@@ -65,13 +71,13 @@ function generateCategoryBar(data){
         // adding the list item to the list
         document.querySelector(".categoryList").appendChild(listItem)
     })
-    const categoryLinks = document.getElementsByClassName("categoryLinks")
+    const categoryLinks = document.getElementsByClassName("dpIcon")
 
     for (var i = 0; i < categoryLinks.length ; i++){
         const link = categoryLinks.item(i)
         link.addEventListener("click", function () {
             const parent = link.parentNode
-            if (parent.childElementCount > 1){
+            if (parent.childElementCount > 2){
                 if (parent.lastElementChild.style.display === "none") {
                     parent.lastElementChild.style.display = "flex"
                 } else {
