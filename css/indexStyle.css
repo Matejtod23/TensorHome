@@ -313,6 +313,7 @@ li {
 .dpIcon {
     padding-left: 5px;
     cursor: pointer;
+    max-height: 20px;
 }
 .categoryList{
     gap: 20px;

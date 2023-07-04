@@ -130,6 +130,7 @@ li {
 .dpIcon {
     padding-left: 5px;
     cursor: pointer;
+    max-height: 20px;
 }
 .categoriesBar h3{
     font-size: calc(1rem + .6vw);
