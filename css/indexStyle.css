@@ -324,6 +324,7 @@ li {
     font-weight: 550;
     cursor: pointer;
     text-align: justify-all;
+    max-height: 20px;
 }
 .subcategory{
     flex-direction: column;
