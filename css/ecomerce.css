@@ -145,7 +145,6 @@ li {
     text-decoration: none;
     color: black;
     cursor: pointer;
-    max-height: 20px;
 }
 .categoryLinks:hover{
     transition: ease-in-out 150ms;

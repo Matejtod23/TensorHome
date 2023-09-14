@@ -309,14 +309,15 @@ li {
 .mainListItem{
     display: grid;
     grid-template-columns: 60% 20%;
+    max-width: 120px;
 }
 .dpIcon {
-    padding-left: 5px;
+    margin-left: 5px;
     cursor: pointer;
     max-height: 20px;
 }
 .categoryList{
-    gap: 20px;
+    gap: 30px;
 }
 
 .categoryLinks{
@@ -325,7 +326,7 @@ li {
     font-weight: 550;
     cursor: pointer;
     text-align: justify-all;
-    max-height: 20px;
+    padding-right: 20px;
 }
 .subcategory{
     flex-direction: column;
